@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" hfref="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="backend.js" defer></script>
 </head>
+
 <body>
+    <div id="header">
+        <h1>Library</h1>
+    </div>
+    <button id="add-book-button"> + Add Book </button>
+    <div id="books-container">
+    </div>
+    <div id="footer"></div>
+    <div id="add-popup">
+        <h2> Add new book </h2>
+        <form id="add-book">
+            <input type="text" id="title" name="title" placeholder="Title" required/>
+            <input type="text" id="author" name="author" placeholder="Author" required/>
+            <input type="number" id="num-pages" name="num-pages" placeholder="Pages" required/>
+            <button id="submit"> Submit </button>
+        </form>
+    </div>
     
 </body>
 </html>
