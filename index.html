@@ -12,17 +12,22 @@
     <div id="header">
         <h1>Library</h1>
     </div>
-    <button id="add-book-button"> + Add Book </button>
-    <div id="books-container">
+    <div id="main-container">
+        <button id="add-book-button"> + Add Book </button>
+        <div id="books-container">
+        </div>
+        <div id="footer">
+            <div id="credits"> Made by Ethan Lin (2024) </div>
+        </div>
     </div>
-    <div id="footer"></div>
+    <div class="overlay"></div>
     <div id="add-popup">
         <h2> Add new book </h2>
         <form id="add-book">
             <input type="text" id="title" name="title" placeholder="Title" required/>
             <input type="text" id="author" name="author" placeholder="Author" required/>
             <input type="number" id="num-pages" name="num-pages" placeholder="Pages" required/>
-            <button id="submit"> Submit </button>
+            <button id="submit" type="submit" form="add-book"> Submit </button>
         </form>
     </div>
     
